@@ -11,7 +11,7 @@ body {
 
 main {
   background-color: #f5f5f5;
-  height: 400px;
+  height: 600px;
   max-width: 800px;
   border-radius: 5px;
   padding: 20px;
@@ -40,19 +40,17 @@ main {
   margin-bottom: 40px;
 }
 
-.die-face {
-  height: 50px;
-  width: 50px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
 .die-num {
   font-size: 2rem;
+}
+
+.die {
+  padding: 4px;
+  width: 104px;
+  height: 104px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .roll-dice {
@@ -73,4 +71,79 @@ main {
 
 .roll-dice:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.dot {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.third-face .dot:nth-of-type(2) {
+  align-self: center;
+}
+
+.third-face .dot:nth-of-type(2) {
+  align-self: center;
+}
+
+.fourth-face {
+  display: flex;
+  justify-content: space-between;
+}
+.fourth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fifth-face {
+  display: flex;
+  justify-content: space-between;
+}
+.fifth-face .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+.counter {
+  font-size: 1.5rem;
+  color: #5035ff;
+}
+
+.time {
+  font-size: 1.5rem;
+  color: #5035ff;
+  margin-right: 12px;
 }
